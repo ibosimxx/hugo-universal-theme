@@ -1,6 +1,6 @@
 +++
 title = "Hugo is for lovers"
-date = "31 de Agosto de 2020"
+date = "2020-08-31T13:50:46+02:00"
 tags = ["hugo"]
 categories = ["pseudo"]
 banner = "img/banners/banner-3.jpg"
