@@ -13,7 +13,7 @@ versión apropiada para su sistema operativo y arquitectura.
 
 Guárdelo en algún lugar específico, ya que lo usaremos en el siguiente paso.
 
-Hay instrucciones más completas disponibles en[installing hugo](/overview/installing/)
+Hay instrucciones más completas disponibles en [installing hugo](https://gohugo.io/getting-started/installing/)
 
 ## Paso 2. Cree los documentos
 
@@ -56,7 +56,7 @@ Ahora vamos a ejecutar hugo nuevamente, pero esta vez con hugo en modo reloj.
     > Press ctrl+c to stop
 
 
-Abra su [favorite editor](http://vim.spf13.com) y cambie una de las fuentes
+Abra su [editor preferido](http://vim.spf13.com) y cambie una de las fuentes
 content pages. How about changing this very file to *fix the typo*. How about changing this very file to *fix the typo*.
 
 Content files are found in `docs/content/`. Unless otherwise specified, files
