@@ -1,4 +1,5 @@
 +++
+author ="Ibosim"
 title = "Hugo is for lovers"
 date = "2020-08-31T13:50:46+02:00"
 tags = ["hugo"]
