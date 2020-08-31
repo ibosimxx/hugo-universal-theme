@@ -6,28 +6,28 @@ categories = ["pseudo"]
 banner = "img/banners/banner-3.jpg"
 +++
 
-## Step 1. Install Hugo
+## Paso 1. Instalar Hugo
 
-Goto [hugo releases](https://github.com/spf13/hugo/releases) and download the
-appropriate version for your os and architecture.
+Ve a [hugo releases](https://github.com/spf13/hugo/releases) y descarga la
+versión apropiada para su sistema operativo y arquitectura.
 
-Save it somewhere specific as we will be using it in the next step.
+Guárdelo en algún lugar específico, ya que lo usaremos en el siguiente paso.
 
-More complete instructions are available at [installing hugo](/overview/installing/)
+Hay instrucciones más completas disponibles en[installing hugo](/overview/installing/)
 
-## Step 2. Build the Docs
+## Paso 2. Cree los documentos
 
-Hugo has its own example site which happens to also be the documentation site
-you are reading right now.
+Hugo tiene su propio sitio de ejemplo, que también es el sitio de documentación.
+estás leyendo ahora mismo.
 
-Follow the following steps:
+Siga los siguientes pasos:
 
- 1. Clone the [hugo repository](http://github.com/spf13/hugo)
- 2. Go into the repo
- 3. Run hugo in server mode and build the docs
- 4. Open your browser to http://localhost:1313
+ 1. Clona el [hugo repository](http://github.com/spf13/hugo)
+ 2. Ve al repositorio
+ 3. Ejecute hugo en modo servidor y compile los documentos.
+ 4. Abra su navegador en http://localhost:1313
 
-Corresponding pseudo commands:
+Pseudo comandos correspondientes:
 
     git clone https://github.com/spf13/hugo
     cd hugo
@@ -38,13 +38,14 @@ Corresponding pseudo commands:
     > Web Server is available at http://localhost:1313
     > Press ctrl+c to stop
 
-Once you've gotten here, follow along the rest of this page on your local build.
+Una vez que haya llegado aquí, siga el resto de esta página en su versión local.
 
-## Step 3. Change the docs site
+## Paso 3. Cambia el sitio de documentos
 
-Stop the Hugo process by hitting ctrl+c.
 
-Now we are going to run hugo again, but this time with hugo in watch mode.
+Detenga el proceso de Hugo pulsando ctrl + c..
+
+Ahora vamos a ejecutar hugo nuevamente, pero esta vez con hugo en modo reloj.
 
     /path/to/hugo/from/step/1/hugo server --source=./docs --watch
     > 29 pages created
@@ -55,7 +56,7 @@ Now we are going to run hugo again, but this time with hugo in watch mode.
     > Press ctrl+c to stop
 
 
-Open your [favorite editor](http://vim.spf13.com) and change one of the source
+Abra su [favorite editor](http://vim.spf13.com) y cambie una de las fuentes
 content pages. How about changing this very file to *fix the typo*. How about changing this very file to *fix the typo*.
 
 Content files are found in `docs/content/`. Unless otherwise specified, files
@@ -75,6 +76,6 @@ Refresh the browser and observe that the typo is now fixed.
 Notice how quick that was. Try to refresh the site before it's finished building.. I double dare you.
 Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.
 
-## Step 4. Have fun
+## Paso 4. Diviértete
 
-The best way to learn something is to play with it.
+La mejor forma de aprender algo es jugar con él.
