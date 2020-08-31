@@ -1,9 +1,10 @@
 +++
-title = "Creating a new theme"
-date = "2015-06-24T13:50:46+02:00"
+author = "ibosim"
+title = "Creando un nuevo tema"
+date = "2020-08-24T13:50:46+02:00"
 tags = ["theme"]
 categories = ["starting"]
-description = "This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content."
+description = "Este tutorial le mostrará cómo crear un tema simple en Hugo. Supongo que está familiarizado con HTML, la línea de comandos de bash, y que se siente cómodo usando Markdown para formatear el contenido.."
 banner = "img/banners/banner-1.jpg"
 +++
 
