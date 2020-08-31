@@ -1,6 +1,6 @@
 +++
 title = "Hugo is for lovers"
-date = "2020-08-31T13:39:46+02:00"
+date = "31 de Agosto de 2020"
 tags = ["hugo"]
 categories = ["pseudo"]
 banner = "img/banners/banner-3.jpg"
@@ -56,14 +56,14 @@ Ahora vamos a ejecutar hugo nuevamente, pero esta vez con hugo en modo reloj.
     > Press ctrl+c to stop
 
 
-Abra su [editor preferido](http://vim.spf13.com) y cambie una de las fuentes
-content pages. How about changing this very file to *fix the typo*. How about changing this very file to *fix the typo*.
+Abra su [editor preferido](http://vim.spf13.com) y cambie una de las paginas 
+de contenido.  ¿Qué tal cambiar este mismo archivo para * corregir el error tipográfico * ?
 
-Content files are found in `docs/content/`. Unless otherwise specified, files
-are located at the same relative location as the url, in our case
+Los archivos de contenido se encuentran en `docs/content/`.  A menos que se especifique lo contrario, 
+los archivos se encuentran en la misma ubicación relativa que la URL, en nuestro caso
 `docs/content/overview/quickstart.md`.
 
-Change and save this file.. Notice what happened in your terminal.
+Cambie y guarde este archivo. Observe lo que sucedió en su terminal.
 
     > Change detected, rebuilding site
 
@@ -71,10 +71,10 @@ Change and save this file.. Notice what happened in your terminal.
     > 0 tags index created
     > in 26 ms
 
-Refresh the browser and observe that the typo is now fixed.
+Actualice el navegador y observe que el error tipográfico ahora está arreglado.
 
-Notice how quick that was. Try to refresh the site before it's finished building.. I double dare you.
-Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.
+Note lo rápido que fue. Intenta actualizar el sitio antes de que termine de construirse. Te reto dos veces.
+Tener comentarios casi instantáneos le permite hacer que su creatividad fluya sin tener que esperar largas construcciones.
 
 ## Paso 4. Diviértete
 
