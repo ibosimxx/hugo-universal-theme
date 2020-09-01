@@ -72,7 +72,7 @@ paginate = 10
     author = "DevCows"
     defaultKeywords = ["devows", "hugo", "go"]
     mainSections = ["blog"]
-    defaultDescription = "Usando template de devcows using hugo"
+    defaultDescription = "Template de devcows usando hugo"
 
     # Social media
     facebook_site = "" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')
@@ -165,7 +165,7 @@ paginate = 10
     title = "¿ Quieres ver más ?"
     subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
     link_url = "#"
-    link_text = "Check other homepages"
+    link_text = "Mira otras páginas"
 
 [params.clients]
     enable = true
