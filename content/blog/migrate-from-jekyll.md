@@ -31,7 +31,7 @@ Hugo puede leer su configuración como JSON, YAML o TOML. Hugo también admite l
 
 ## Establezca su carpeta de publicación de configuración en `_site`
 
-El valor predeterminado es que Jekyll publique `_site`y que hugo publique `public`_. Si, como yo, se ha_[_`_site` _asignado a un submodulo de Git en la `gh-pages` branch](), querrá hacer una de estas dos alternativas:
+El valor predeterminado es que Jekyll publique `_site`y que hugo publique `public`_. Si, como yo, se ha_[_`_site` _asignado a un submodulo de Git en la `gh-pages` branch](http://blog.blindgaenger.net/generate_github_pages_in_a_submodule.html), querrá hacer una de estas dos alternativas:
 
 1. Cambie su submódulo para apuntar al mapa `gh-pages` a público en lugar de  `_site` (recommendado).
 
