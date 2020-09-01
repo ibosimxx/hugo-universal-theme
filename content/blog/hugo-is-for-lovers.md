@@ -1,12 +1,12 @@
 +++
-author ="Ibosim"
-title = "Hugo is for lovers"
-date = "2020-08-31T13:50:46+02:00"
-tags = ["hugo"]
-categories = ["pseudo"]
+author = "Ibosim"
 banner = "img/banners/banner-3.jpg"
-+++
+categories = []
+date = 2020-08-31T11:50:46Z
+tags = ["hugo"]
+title = "Hugo es para fans"
 
++++
 ## Paso 1. Instalar Hugo
 
 Ve a [hugo releases](https://github.com/spf13/hugo/releases) y descarga la
