@@ -31,14 +31,14 @@ Hugo puede leer su configuración como JSON, YAML o TOML. Hugo también admite l
 
 ## Establezca su carpeta de publicación de configuración en `_site`
 
-El valor predeterminado es que Jekyll publique `_site`y que hugo publique `public`_. Si, como yo, se ha_[_`_site` _mapped to a git submodule on the `gh-pages` branch](), querrá hacer una de estas dos alternativas:
+El valor predeterminado es que Jekyll publique `_site`y que hugo publique `public`_. Si, como yo, se ha_[_`_site` _asignado a un submodulo de Git en la `gh-pages` branch](), querrá hacer una de estas dos alternativas:
 
-1. Change your submodule to point to map `gh-pages` to public instead of `_site` (recommended).
+1. Cambie su submódulo para apuntar al mapa `gh-pages` a público en lugar de  `_site` (recommendado).
 
         git submodule deinit _site
         git rm _site
         git submodule add -b gh-pages git@github.com:your-username/your-repo.git public
-2. Or, change the Hugo configuration to use `_site` instead of `public`.
+2. O cambie la configuración de Hugo para usar  `_site` en lugar de `public`.
 
         {
             ..
@@ -46,17 +46,17 @@ El valor predeterminado es que Jekyll publique `_site`y que hugo publique `publi
             ..
         }
 
-## Convert Jekyll templates to Hugo templates
+## Convierta las plantillas de Jekyll en plantillas de Hugo
 
 That's the bulk of the work right here. The documentation is your friend. You should refer to [Jekyll's template documentation](http://jekyllrb.com/docs/templates/) if you need to refresh your memory on how you built your blog and [Hugo's template](/layout/templates/) to learn Hugo's way.
 
 As a single reference data point, converting my templates for [heyitsalex.net](http://heyitsalex.net/) took me no more than a few hours.
 
-## Convert Jekyll plugins to Hugo shortcodes
+## Convierta los complementos de Jekyll en Shortcode de Hugo
 
 Jekyll has [plugins](http://jekyllrb.com/docs/plugins/); Hugo has [shortcodes](/doc/shortcodes/). It's fairly trivial to do a port.
 
-### Implementation
+### Implementación
 
 As an example, I was using a custom [`image_tag`](https://github.com/alexandre-normand/alexandre-normand/blob/74bb12036a71334fdb7dba84e073382fc06908ec/_plugins/image_tag.rb) plugin to generate figures with caption when running Jekyll. As I read about shortcodes, I found Hugo had a nice built-in shortcode that does exactly the same thing.
 
@@ -137,7 +137,7 @@ is written as this Hugo shortcode:
     </figure>
     <!-- image -->
 
-### Usage
+### Uso
 
 I simply changed:
 
@@ -149,16 +149,16 @@ to this (this example uses a slightly extended version named `fig`, different th
 
 As a bonus, the shortcode named parameters are, arguably, more readable.
 
-## Finishing touches
+## Últimos retoques
 
-### Fix content
+### Corregir contenido
 
 Depending on the amount of customization that was done with each post with Jekyll, this step will require more or less effort. There are no hard and fast rules here except that `hugo server --watch` is your friend. Test your changes and fix errors as needed.
 
-### Clean up
+### Limpiar
 
 You'll want to remove the Jekyll configuration at this point. If you have anything else that isn't used, delete it.
 
-## A practical example in a diff
+## Un ejemplo práctico en una Diff
 
 [Hey, it's Alex](http://heyitsalex.net/) was migrated in less than a _father-with-kids day_ from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this [diff](https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610).
