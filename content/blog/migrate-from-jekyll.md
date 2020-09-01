@@ -58,9 +58,9 @@ Jekyll tiene [plugins](http://jekyllrb.com/docs/plugins/); Hugo tiene [shortcode
 
 ### Implementación
 
-As an example, I was using a custom [`image_tag`](https://github.com/alexandre-normand/alexandre-normand/blob/74bb12036a71334fdb7dba84e073382fc06908ec/_plugins/image_tag.rb) plugin to generate figures with caption when running Jekyll. As I read about shortcodes, I found Hugo had a nice built-in shortcode that does exactly the same thing.
+Como ejemplo, estaba usando un plugin personalizado [`image_tag`](https://github.com/alexandre-normand/alexandre-normand/blob/74bb12036a71334fdb7dba84e073382fc06908ec/_plugins/image_tag.rb) para generar figuras con subtítulos al ejecutar Jekyll. Mientras leía sobre códigos cortos, descubrí que Hugo tenía un código corto incorporado que hace exactamente lo mismo.
 
-Jekyll's plugin:
+Plugin Jekyll:
 
     module Jekyll
       class ImageTag < Liquid::Tag
@@ -116,7 +116,7 @@ Jekyll's plugin:
     end
     Liquid::Template.register_tag('image', Jekyll::ImageTag)
 
-is written as this Hugo shortcode:
+está escrito como este código corto de Hugo:
 
     <!-- image -->
     <figure {{ with .Get "class" }}class="{{.}}"{{ end }}>
@@ -139,26 +139,26 @@ is written as this Hugo shortcode:
 
 ### Uso
 
-I simply changed:
+Simplemente cambié:
 
     {% image full http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg "One of my favorite touristy-type photos. I secretly waited for the good light while we were "having fun" and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing." ->http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/ %}
 
-to this (this example uses a slightly extended version named `fig`, different than the built-in `figure`):
+a esto (este ejemplo usa una versión ligeramente extendida llamada `fig`, diferente del incorporado `figure`):
 
     {{%/* fig class="full" src="http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg" title="One of my favorite touristy-type photos. I secretly waited for the good light while we were having fun and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing." link="http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/" */%}}
 
-As a bonus, the shortcode named parameters are, arguably, more readable.
+Como beneficio adicional, los parámetros con nombre de Shortcode son, posiblemente, más legibles.
 
 ## Últimos retoques
 
 ### Corregir contenido
 
-Depending on the amount of customization that was done with each post with Jekyll, this step will require more or less effort. There are no hard and fast rules here except that `hugo server --watch` is your friend. Test your changes and fix errors as needed.
+Dependiendo de la cantidad de personalización que se hizo con cada publicación con Jekyll, este paso requerirá más o menos esfuerzo. Aquí no hay reglas estrictas y rápidas, excepto que `hugo server --watch` es su amigo. Pruebe sus cambios y corrija los errores según sea necesario.
 
 ### Limpiar
 
-You'll want to remove the Jekyll configuration at this point. If you have anything else that isn't used, delete it.
+Querrá eliminar la configuración de Jekyll en este punto. Si tiene algo más que no se utiliza, elimínelo.
 
 ## Un ejemplo práctico en una Diff
 
-[Hey, it's Alex](http://heyitsalex.net/) was migrated in less than a _father-with-kids day_ from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this [diff](https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610).
+[Hey, it's Alex](http://heyitsalex.net/) Fue migrada en menos _que canta un gallo_ from Jekyll to Hugo. Puede ver todos los cambios (y errores) mirando aqui [diff](https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610).
