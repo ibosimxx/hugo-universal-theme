@@ -2,7 +2,7 @@
 author = "ibosim"
 title = "Creando un nuevo tema"
 date = "2020-08-24T13:50:46+02:00"
-tags = ["theme"]
+tags = ["temas"]
 categories = ["starting"]
 description = "Este tutorial le mostrará cómo crear un tema simple en Hugo. Supongo que está familiarizado con HTML, la línea de comandos de bash, y que se siente cómodo usando Markdown para formatear el contenido.."
 banner = "img/banners/banner-1.jpg"
