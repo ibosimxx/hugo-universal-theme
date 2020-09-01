@@ -48,13 +48,13 @@ El valor predeterminado es que Jekyll publique `_site`y que hugo publique `publi
 
 ## Convierta las plantillas de Jekyll en plantillas de Hugo
 
-Ese es el grueso del trabajo aquí mismo. La documentación es tu amiga. Debes consultar [La documentación de la plantilla de Jekyll](http://jekyllrb.com/docs/templates/) si necesitas refrescar tu memoria sobre cómo construiste tu blog y [la plantilla de Hugo](/layout/templates/) para aprender el estilo de Hugo.
+Ese es el grueso del trabajo aquí mismo. La documentación es tu amiga. Debes consultar [La documentación de la plantilla de Jekyll](http://jekyllrb.com/docs/templates/) si necesitas refrescar tu memoria sobre cómo construiste tu blog y [la plantilla de Hugo](https://gohugo.io/templates/) para aprender el estilo de Hugo.
 
-As a single reference data point, converting my templates for [heyitsalex.net](http://heyitsalex.net/) took me no more than a few hours.
+Como un única referencia, conviertir mis plantillas para [heyitsalex.net](http://heyitsalex.net/) solo me llevó unas pocas horas.
 
 ## Convierta los complementos de Jekyll en Shortcode de Hugo
 
-Jekyll has [plugins](http://jekyllrb.com/docs/plugins/); Hugo has [shortcodes](/doc/shortcodes/). It's fairly trivial to do a port.
+Jekyll tiene [plugins](http://jekyllrb.com/docs/plugins/); Hugo tiene [shortcodes](/doc/shortcodes/). No es difícil de portar.
 
 ### Implementación
 
