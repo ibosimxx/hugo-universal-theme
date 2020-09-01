@@ -48,7 +48,7 @@ El valor predeterminado es que Jekyll publique `_site`y que hugo publique `publi
 
 ## Convierta las plantillas de Jekyll en plantillas de Hugo
 
-That's the bulk of the work right here. The documentation is your friend. You should refer to [Jekyll's template documentation](http://jekyllrb.com/docs/templates/) if you need to refresh your memory on how you built your blog and [Hugo's template](/layout/templates/) to learn Hugo's way.
+Ese es el grueso del trabajo aquí mismo. La documentación es tu amiga. Debes consultar [La documentación de la plantilla de Jekyll](http://jekyllrb.com/docs/templates/) si necesitas refrescar tu memoria sobre cómo construiste tu blog y [la plantilla de Hugo](/layout/templates/) para aprender el estilo de Hugo.
 
 As a single reference data point, converting my templates for [heyitsalex.net](http://heyitsalex.net/) took me no more than a few hours.
 
