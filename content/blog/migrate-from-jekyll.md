@@ -5,7 +5,7 @@ date = "2020-09-01T13:50:46+02:00"
 tags = ["jekyll", "Hugo"]
 title = "Migrando desde Jekyll"
 twitter_author = "jekyllrb"
-author:"jekyllrb"
+author = "jekyllrb"
 +++
 ## Moviendo el contenido a `static`
 
