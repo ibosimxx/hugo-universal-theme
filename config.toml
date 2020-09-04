@@ -113,7 +113,7 @@ paginate = 10
 
     logo = "img/logo.png"
     logo_small = "img/logo-small.png"
-    address = """<p class="text-uppercase"><strong>IbosimBBS.</strong>
+    address = """<p class="text-uppercase"><strong>IbosimBBS</strong>
         <br>Sant Antoni de Portmany
         <br>Eivissa
         <br>Illes Balears
