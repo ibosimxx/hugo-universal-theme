@@ -4,13 +4,6 @@ auto_deploy: false
 admin_path: "/"
 webhook_url: 
 sections:
-- type: heading
-  label: Configuracion
-- type: directory
-  path: ''
-  label: Config
-  create: all
-  match: "*.toml"
 - type: directory
   path: content
   label: Pages
@@ -21,6 +14,13 @@ sections:
   label: Blog
   create: all
   match: "**/*"
+- type: heading
+  label: Configuracion
+- type: directory
+  path: ''
+  label: Config
+  create: all
+  match: "*.toml"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
